@@ -1,0 +1,10 @@
+import numpy as np
+
+# Creating an array with missing values
+arr = np.array([1, 2, np.nan, 4, np.nan, 6])
+
+# Removing missing values
+cleaned_arr = arr[~np.isnan(arr)]
+
+print("Original Array:\n", arr)
+print("Array with Missing Values Removed:\n", cleaned_arr)
